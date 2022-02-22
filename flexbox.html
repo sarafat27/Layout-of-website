@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container {
+            height: 600px;
+            border: 2px dotted black;
+            display: flex;
+
+            align-items: stretch;
+        }
+
+        .box {
+
+            width: 200px;
+            border: 3px dashed indigo;
+            /* font-size: 3em; */
+        }
+
+        #box-1 {
+            /* order: 2; */
+        }
+
+        #box-2 {
+            flex-grow: 1;
+            /* order: 1; */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>I am flexible right now</h1>
+    <div class="container">
+        <div id="box-1" class="box">BOX-1</div>
+        <div id="box-2" class="box">
+            <h3>BOX-2</h3>
+            <article class="blog">
+                <h4>blog-1</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur eos, itaque maiores dolore totam
+                    consequuntur voluptate atque in adipisci perferendis, quod suscipit rerum, quisquam eligendi veniam!
+                    Alias cupiditate soluta optio?</p>
+            </article>
+            <article class="blog">
+                <h4>blog-2</h4>
+                <p>Ad deleniti porro culpa amet dolor. Aperiam quos saepe, optio est neque veniam eius quo nam, iusto
+                    sapiente eum? Inventore, ad iste ea eum esse quam veniam saepe minima numquam.</p>
+            </article>
+            <article class="blog">
+                <h4>blog-3</h4>
+                <p>Quos labore asperiores suscipit nesciunt, consectetur quam enim recusandae ex magni ab nemo officia.
+                    Nulla cum totam autem, eos minus quisquam quia iusto quam, est facilis porro, cupiditate laboriosam
+                    aperiam!</p>
+            </article>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
